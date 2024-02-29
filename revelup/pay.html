@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pay Page</title>
+<script src="revelUP.js"></script>
+<link rel="stylesheet" href="pay.css">
+</head>
+<body>
+
+  <script>
+    function loadHeaderAndFooter() {
+        // 헤더 파일을 가져오는 XMLHttpRequest 객체 생성
+        var xhttpHeader = new XMLHttpRequest();
+        xhttpHeader.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                // 헤더 파일의 내용을 가져와서 특정 요소의 내용으로 대체
+                document.getElementById("header").innerHTML = this.responseText;
+            }
+        };
+        xhttpHeader.open("GET", "header.html", true);
+        xhttpHeader.send();
+
+        // 푸터 파일을 가져오는 XMLHttpRequest 객체 생성
+        var xhttpFooter = new XMLHttpRequest();
+        xhttpFooter.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                // 푸터 파일의 내용을 가져와서 특정 요소의 내용으로 대체
+                document.getElementById("footer").innerHTML = this.responseText;
+            }
+        };
+        xhttpFooter.open("GET", "footer.html", true);
+        xhttpFooter.send();
+    }
+
+    // 페이지 로드 시 헤더와 푸터를 가져오도록 호출
+    window.onload = loadHeaderAndFooter;
+</script>
+
+<!-- <div id="header"></div> -->
+
+<!-- 이름 -->
+<div class=information>
+    <div lass="information">이름</div>
+    <input class="information"></div><br>
+    <br>
+<!-- 번호입력  -->
+  <div class="phone">휴대폰 번호</div>
+  <input class="information"></div>
+  <input class="information"></div>
+  <input class="information"></div>
+<br>
+  <!-- 결제 배송지 정보 입력(주소) -->
+  <br>
+  <div class="address" onclick="makeEditable('postCode')">주소</div>
+  <input class="address"></div>
+  <button class="btn" onclick="openNewWindow()">우편번호 검색</div>
+  <br>
+  <!--결제 수단 : 카카오 페이-->
+  <button onclick="">카카오페이</button><br>
+
+  <!-- <div id="footer"></div> -->
+</body>

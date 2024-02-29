@@ -1,0 +1,85 @@
+.location-path {
+    font-size: 24px;
+    margin-top: 33.2%;
+    margin-left: 30.1%;
+    margin-right: 8.1%;
+    width: 50%;
+}
+
+.contents {
+    margin-top: 33.2%;
+    margin-left: 30.1%;
+    margin-right: 8.1%;
+    width: 50%;
+}
+
+.contents-input {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.contents-input > p {
+    width: 100px;
+    margin: 7px 50px 0px 0px;
+}
+
+.contents-input input {
+    border: 0px;
+    width: 85%;
+}
+
+.short-input {
+    width: 251px;
+    height: 37px;
+    border-radius: 15px;
+    border: solid 1px #818381;
+    padding-top: 2%;
+    padding-left: 2%;
+}
+
+.mid-input {
+    width: 538px;
+    height: 37px;
+    border-radius: 15px;
+    border: solid 1px #818381;
+    padding-top: 2%;
+    padding-left: 2%;
+}
+
+
+.long-input {
+    width: 538px;
+    height: 195px;
+    border-radius: 15px;
+    border: solid 1px #818381;
+    padding-top: 2%;
+    padding-left: 2%;
+}
+
+.long-input input {
+    width:97%;
+    height: 94%;
+    text-align: top;
+}
+
+.contents-button {
+    display: flex;
+}
+
+.back-button {
+    width: 131px;
+    height: 63px;
+    margin: 92px 4px 118px 21px;
+    padding: 18px 30.6px 16px 29.2px;
+    border-radius: 15px;
+    background-color: #f95252;
+}
+
+.next-button {
+    width: 131px;
+    height: 63px;
+    margin: 92px 263px 118px 4px;
+    padding: 18px 30.6px 16px 29.2px;
+    border-radius: 15px;
+    background-color: #0cc291;
+}
